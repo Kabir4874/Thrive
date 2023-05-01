@@ -244,6 +244,9 @@ section{
     .facilities-img{
         flex-basis: 50%;
     }
+    .logo{
+        padding-top: 80px;
+    }
 }
 @media(max-width:770px){
     .input button, .input input{
@@ -259,6 +262,12 @@ section{
         margin-top: 20px;
         margin-bottom: 30px;
         font-size: 20px;
+    }
+    .logo{
+        padding-top: 80px;
+    }
+    .of{
+        margin: 0;
     }
     .of h1{
         font-size: 30px;
