@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "FontContent",sans-serif;
+}
+header{
+    width: 100%;
+    height: 95vh;
+    background: url(https://d2dcafd8b62eqh.cloudfront.net/thrive-microsite/main-section.svg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.logo{
+    width: 100%;
+    text-align: center;
+    padding-top: 180px;
+}
+.logo img{
+    width: 220px;
+}
+.of{
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.of img{
+    width: 132px;
+}
+.of h1{
+    font-size: 51px;
+    color: #3a3a3a;
+    padding-top: 60px;
+}
+.input input{
+    position: relative;
+    padding: 30px 50px;
+    width: 30%;
+    outline: none;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: -5px 0px 40px 0px #6236ff24;
+}
+.input .l1{
+    position: absolute;
+    z-index: 1;
+    font-size: 25px;
+    color: #6236ff;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+.input button{
+    margin-left: -5px;
+    padding: 30px 40px;
+    border: none;
+    outline: none;
+    color: white;
+    background: #3a3a3a;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    transition: .4s;
+    cursor: pointer;
+}
+.input button:hover{
+    background-color: #6236ff;
+}
+
+/* -----------Service---------------- */
+
+section{
+    width: 100%;
+    padding: 60px 10%;
+    margin: 0 auto;
+}
+.service{
+    background-color: #3a3a3a;
+}
+.service-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.service h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 300;
+    color: white;
+    margin: 60px 0 ;
+}
+.service h2 span{
+    color: #ec8882;
+}
+.service-col{
+    text-align: center;
+    flex-basis: 15%;
+}
+.service-col img{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.service-col h4{
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* ------------Facilities---------------- */
+
+.facilities-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10%;
+    flex-wrap: wrap;
+}
+.facilities-text{
+    flex-basis: 50%;
+}
+.facilities-img{
+    flex-basis: 50%;
+}
+.facilities-img img{
+    width: 100%;
+}
+.facilities-text h1{
+    color: #6236ff;
+    font-size: 51px;
+    margin-bottom: 30px;
+}
+.facilities-text h3{
+    color: #3a3a3a;
+    font-size: 28px;
+}
+.row2{
+    margin-bottom: 300px;
+}
+
+/* -----------Footer------------- */
+
+.footer{
+    padding: 60px 5%;
+    background: #3a3a3a;
+    text-align: center;
+}
+.card{
+    margin-top: -300px;
+    display: flex;
+    background: white;
+    padding: 60px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 2px 2px 50px #6236ff31;
+}
+.card img{
+    flex-basis: 20%;
+}
+.card-text{
+    padding-left: 140px;
+    flex-basis: 80%;
+    text-align: left;
+}
+.card-text h3{
+    font-size: 28px;
+    color: #3a3a3a;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.card-text button{
+    padding: 10px 80px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: 600;
+    background: #6236ff;
+    transition: .4s;
+    cursor: pointer;
+}
+.card-text button:hover{
+    background: #3a3a3a;
+}
+.f-logo{
+    margin: 40px 0;
+    width: 135px;
+}
+.footer a{
+    color: white;
+    display: block;
+    margin-bottom: 40px;
+}
+.icons{
+    margin-bottom: 40px;
+}
+.icons i{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 30%;
+}
+.text p{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.357);
+}
+.footer p{
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.357);
+}
+
+/* ------Responsive------------ */
+@media(max-width:1650px){
+    .facilities-text{
+        flex-basis: 40%;
+        align-items: center;
+    }
+    .facilities-img{
+        flex-basis: 40%;
+        align-items: center;
+    }
+}
+@media(max-width:1110px){
+    section{
+        padding: 60px 5%;
+        margin: 0 auto;
+    }
+    .facilities-text{
+        flex-basis: 50%;
+    }
+    .facilities-img{
+        flex-basis: 50%;
+    }
+}
+@media(max-width:770px){
+    .input button, .input input{
+        display: block;
+        width: 80%;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    .input .l1{
+        left: 10%;
+    }
+    .input button{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    .of h1{
+        font-size: 30px;
+    }
+    .service h2{
+        font-size: 25px;
+    }
+    .service-col{
+        flex-basis: 100%;
+        margin-bottom: 60px;
+    }
+    .service-col img{
+        width: 40%;
+    }
+    .service-col h4{
+        font-size: 18px;
+    }
+    .facilities-text{
+        flex-basis: 100%;
+    }
+    .facilities-img{
+        flex-basis: 100%;
+        margin: 60px 0;
+    }
+    .facilities-text h1{
+        font-size: 30px;
+    }
+    .facilities-text h3{
+        font-size: 20px;
+    }
+    .card{
+        margin-top: -200px;
+        padding: 30px;
+    }
+    .card img{
+        display: none;
+    }
+    .card-text{
+        flex-basis: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .card-text h3{
+        font-size: 18px;
+    }
+    .card-text button{
+        font-size: 16px;
+    }
+    .text{
+        margin: 20px 5%;
+    }
+}
